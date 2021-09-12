@@ -1,0 +1,120 @@
+﻿
+.container {
+    max-width: 1280px;
+}
+
+.bg-grey {
+    background-color: #F5F8FA;
+}
+
+.main-content {
+    min-height: 50vh;
+}
+
+.carousel-item {
+    height: 100vh;
+    background-color: black;
+}
+
+    .carousel-item img {
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.88;
+    }
+
+.carousel-caption {
+    background-color: #00000073;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 5em;
+}
+
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+* {
+    font-family: Roboto,"RobotoRegular",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.navtop {
+    background-color: transparent;
+    box-shadow: none;
+    background-image: linear-gradient(to bottom, #000000, #00000000);
+}
+    .navtop .logo img {
+        filter: grayscale(1) invert(1) brightness(100);
+        transition: 0;
+    }
+
+.navOnScroll {
+    background-color: #000000bf;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+    .navOnScroll ul li a {
+        color: #027DC4;
+    }
+
+nav {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 10px 130px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+    nav .logo {
+        float: left;
+    }
+
+        nav .logo img {
+            width: 82px;
+            transition: .5s;
+            /*filter: grayscale(1) invert(1);*/
+        }
+
+    nav ul {
+        float: right;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+        nav ul li {
+            list-style: none;
+        }
+
+            nav ul li a {
+                line-height: 42px;
+                padding: 5px 20px;
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: .5s;
+                font-weight: bold;
+                color: white;
+            }
+            a:hover {
+                color: white;
+            }
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 7rem;
+    height: 7rem;
+}
+
+h2{
+    font-weight:bolder;
+}
